@@ -1,13 +1,857 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
-:root{font-family:Manrope,sans-serif;color:#252525;background:#fafaf8;font-synthesis:none;text-rendering:optimizeLegibility}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px}a{color:inherit;text-decoration:none}button{font:inherit}.site-shell{overflow:hidden;background:#fafaf8}.section-wrap,.topbar{width:min(1060px,calc(100% - 64px));margin:0 auto}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:23px;font-weight:800;letter-spacing:-1.3px}.brand span{color:#84aa43}.nav{display:flex;align-items:center;gap:27px;color:#777;font-size:12px}.nav a:hover{color:#252525}.nav-cta{display:inline-flex;align-items:center;gap:8px;color:#252525;font-weight:700}.language{border:0;border-left:1px solid #ddd;background:none;color:#777;padding:0 0 0 17px;font-size:11px;cursor:pointer}.menu-toggle{display:none;border:0;background:transparent;color:#252525}.hero{min-height:505px;padding:115px 0 110px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:60px}.eyebrow,.section-label{font:10px 'DM Mono',monospace;letter-spacing:.08em;color:#888}.eyebrow{display:flex;align-items:center;gap:8px;margin:0 0 22px}.status-dot{width:6px;height:6px;border-radius:50%;background:#84aa43}.hero h1,h2{letter-spacing:-.06em;font-weight:700}.hero h1{font-size:clamp(42px,5.3vw,69px);line-height:1.09;margin:0 0 22px}.hero em,h2 em{font-family:'Playfair Display',serif;color:#84aa43;font-weight:600}.hero-intro{max-width:420px;color:#777;font-size:15px;line-height:1.8}.hero-intro strong{color:#252525}.hero-actions{display:flex;align-items:center;gap:19px;margin-top:30px}.button{display:inline-flex;align-items:center;gap:9px;padding:13px 16px;background:#252525;color:#fff;border-radius:3px;font-size:12px;font-weight:700}.button:hover{background:#84aa43}.text-link{display:inline-flex;align-items:center;gap:8px;color:#555;font-size:12px;font-weight:700;border-bottom:1px solid #aaa;padding-bottom:4px}.text-link:hover{color:#84aa43;border-color:#84aa43}.hero-mark{width:270px;height:270px;margin:auto;position:relative;border:1px solid #d6ded0;border-radius:50%;display:grid;place-items:center;color:#84aa43}.hero-mark:before,.hero-mark:after{content:'';position:absolute;border:1px solid #e6e9e2;border-radius:50%}.hero-mark:before{inset:22px}.hero-mark:after{inset:60px}.hero-mark span{font-size:45px;font-weight:800;letter-spacing:-.1em}.hero-mark i{position:absolute;width:10px;height:10px;right:30px;top:68px;border-radius:50%;background:#84aa43}.about,.work,.contact{border-top:1px solid #e3e5df}.about{padding:92px 0}.about-content{display:grid;grid-template-columns:1.1fr .8fr;gap:80px;margin:30px 0 63px}.about h2,.work h2,.contact h2{font-size:clamp(33px,4vw,51px);line-height:1.14;margin:0}.about-detail p{max-width:350px;margin:0 0 20px;color:#777;font-size:14px;line-height:1.9}.skill-list{display:grid;grid-template-columns:repeat(6,1fr);border-top:1px solid #ddd}.skill-item{padding:15px 0;border-bottom:1px solid #ddd;display:flex;flex-direction:column;gap:10px}.skill-item+ .skill-item{padding-left:18px;border-left:1px solid #ddd}.skill-item span{font:10px 'DM Mono',monospace;color:#aaa}.skill-item strong{font-size:13px}.work{padding:92px 0}.work-heading{margin:30px 0 42px}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.project-visual{height:210px;position:relative;padding:14px;background:#e8eee1}.project-visual span{font:10px 'DM Mono',monospace;color:#758267}.project-visual:after{content:'';position:absolute;width:90px;height:90px;border-radius:50%;right:32px;top:44px;background:#c6dcad}.project-blue{background:#e4eef0}.project-blue:after{border-radius:4px;background:#a9cad0;transform:rotate(35deg)}.project-sand{background:#f1ebdf}.project-sand:after{background:#dac39b;border-radius:4px;transform:rotate(45deg)}.project-info{display:flex;align-items:center;justify-content:space-between;padding:15px 0}.project-info h3{font-size:14px;margin:0 0 5px}.project-info p{font:10px 'DM Mono',monospace;color:#999;margin:0}.project-info>svg{color:#84aa43}.all-work{margin:48px auto 0;width:max-content}.contact{padding:92px 0 110px}.contact-kicker{margin:40px 0 8px;color:#888;font:11px 'DM Mono',monospace}.contact h2{font-size:clamp(43px,5.7vw,72px)}.contact-email{display:flex;align-items:center;justify-content:space-between;max-width:620px;margin-top:42px;padding-bottom:12px;border-bottom:1px solid #84aa43;color:#84aa43;font-size:22px;font-weight:600;letter-spacing:-.04em}.footer{min-height:90px;display:flex;align-items:center;justify-content:space-between;color:#999}.footer p{margin:0;font:10px 'DM Mono',monospace}.footer>a:last-child{color:#777}.footer>a:last-child:hover{color:#84aa43}
-@media(max-width:700px){.section-wrap,.topbar{width:calc(100% - 40px)}.topbar{height:65px}.menu-toggle{display:block;z-index:3}.nav{display:none;position:absolute;top:54px;right:20px;width:180px;padding:18px;flex-direction:column;align-items:stretch;gap:16px;background:#fff;border:1px solid #ddd;box-shadow:0 8px 28px #0000000b}.nav-open{display:flex}.nav-cta{justify-content:space-between}.language{border:0;padding:0;text-align:left}.hero{display:block;min-height:0;padding:87px 0 78px}.hero h1{font-size:clamp(40px,12vw,57px)}.hero-mark{width:190px;height:190px;margin:65px auto 0}.hero-mark:before{inset:16px}.hero-mark:after{inset:48px}.hero-mark span{font-size:33px}.hero-mark i{right:19px;top:48px}.about,.work,.contact{padding:70px 0}.about-content{display:block;margin:25px 0 45px}.about-detail{margin-top:28px}.skill-list{grid-template-columns:repeat(2,1fr)}.skill-item+ .skill-item{padding-left:0;border-left:0}.skill-item:nth-child(even){padding-left:15px;border-left:1px solid #ddd}.projects{grid-template-columns:1fr}.project-visual{height:180px}.contact-email{font-size:17px}.footer{min-height:110px;flex-wrap:wrap;padding:18px 0}.footer p{width:100%;order:3}}
+/* ============================================================================
+   IF — personal site
+   Design tokens → base → layout → components → motion → responsive
+   Fonts are self-hosted and imported from src/main.tsx (never @import here:
+   a CSS @import blocks the stylesheet and leaks the visitor IP to a CDN).
+   ========================================================================= */
 
-/* One restrained palette: warm white, ink, muted gray and one olive accent. */
-:root { --accent: #789b42; }
-.brand span, .hero em, h2 em, .status-dot, .project-info>svg, .contact-email { color: var(--accent); }
-.status-dot, .hero-mark i { background: var(--accent); }
-.button:hover { background: var(--accent); }
-.project-blue { background: #e8eded; }
-.project-blue:after { background: #b9c8c6; }
-.project-sand { background: #efede5; }
-.project-sand:after { background: #c9c3ae; }
+:root {
+  /* --- surface + ink (warm white → ink, one olive accent) ---------------- */
+  --bg: #f4f1e9;
+  --bg-sunk: #eae5d8;
+  --bg-dark: #0a100d;
+  --ink: #12140f;
+  --ink-soft: #2c2f27;
+  --muted: #5d5c53;
+  --muted-dark: #a8a99c;
+  --line: rgb(18 20 15 / 14%);
+  --line-space: 1px solid var(--line);
+
+  --accent: #8fae4a;
+  --accent-deep: #4d6320;
+  --accent-glow: #8fae4a;
+
+  /* --- type scale: one clamp ladder, no more ad-hoc 10/12/15px ----------- */
+  --step--2: clamp(0.66rem, 0.64rem + 0.08vw, 0.73rem);
+  --step--1: clamp(0.78rem, 0.75rem + 0.12vw, 0.86rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.12rem);
+  --step-1: clamp(1.2rem, 1.1rem + 0.5vw, 1.5rem);
+  --step-2: clamp(1.5rem, 1.28rem + 1.1vw, 2.5rem);
+  --step-3: clamp(2rem, 1.4rem + 2.6vw, 3.4rem);
+  /* Display sizes are deliberately more conservative than the 12–18vw that
+     suits a Latin-only site: CJK glyphs are full-width with no ascender or
+     descender slack, so a 0.9 line-height collides and a 15rem size overflows.
+     The len:lang(en) rules below push the Latin setting back up. */
+  --step-4: clamp(2.2rem, 1.4rem + 3.4vw, 4.4rem);
+  --step-5: clamp(2.4rem, 1.2rem + 5vw, 5.6rem);
+
+  /* --- layout ----------------------------------------------------------- */
+  --gutter: clamp(20px, 5vw, 72px);
+  --measure: 62ch;
+  --radius: 2px;
+  --radius-lg: 4px;
+
+  --shadow-1: 0 1px 2px rgb(18 20 15 / 6%), 0 10px 30px -18px rgb(18 20 15 / 30%);
+  --shadow-2: 0 30px 70px -30px rgb(18 20 15 / 45%);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur: 620ms;
+  --dur-fast: 240ms;
+
+  --topbar-h: clamp(64px, 7vw, 84px);
+}
+
+/* ============================ base ======================================= */
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  /* clearing the sticky top bar when jumping to an anchor */
+  scroll-padding-top: calc(var(--topbar-h) + 16px);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Manrope Variable", Manrope, "PingFang SC", "Hiragino Sans GB",
+    "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: var(--step-0);
+  line-height: 1.7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+h1, h2, h3, p, figure { margin: 0; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; }
+img, canvas { display: block; max-width: 100%; }
+
+::selection { background: var(--accent); color: var(--ink); }
+
+/* Focus must be visible everywhere — the old build had no focus styles at all */
+:focus-visible {
+  outline: 2px solid var(--accent-deep);
+  outline-offset: 3px;
+  border-radius: var(--radius);
+}
+
+/* ======================== grain + shell ================================== */
+
+/* A single feTurbulence layer baked into a data URI. Fixed, never animated:
+   animating a filter is a per-frame full repaint.
+   z-index sits under the top bar (50) but over the page content. */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.site-shell { position: relative; }
+
+.wrap {
+  width: min(1220px, calc(100% - var(--gutter) * 2));
+  margin-inline: auto;
+}
+
+.section { padding: clamp(72px, 12vw, 168px) 0; }
+
+/* full-bleed helper: breaks out of .wrap without creating a scroll container */
+.bleed { margin-inline: calc(50% - 50vw); width: 100vw; }
+.bleed-l { margin-left: calc(50% - 50vw); }
+.bleed-r { margin-right: calc(50% - 50vw); }
+
+/* ========================== topbar ======================================= */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--topbar-h);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* Near-opaque on purpose: the backdrop blur alone let the dark work section
+     bleed a stray bright band behind the bar. */
+  background: color-mix(in oklab, var(--bg) 94%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--dur-fast) linear;
+}
+
+.topbar-stuck { border-bottom-color: var(--line); }
+
+.topbar .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  font-size: var(--step-1);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.brand span { color: var(--accent-deep); }
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 2.4vw, 34px);
+  font-size: var(--step--1);
+  color: var(--muted);
+}
+
+.nav a { position: relative; padding-block: 4px; }
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+.nav a:hover { color: var(--ink); }
+.nav a:hover::after { transform: scaleX(1); transform-origin: left; }
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  font-weight: 700;
+  color: var(--ink);
+  transition: background var(--dur-fast) linear, color var(--dur-fast) linear;
+}
+.nav-cta:hover { background: var(--ink); color: var(--bg); }
+
+.language {
+  border: 1px solid var(--line);
+  background: none;
+  padding: 6px 10px;
+  border-radius: var(--radius);
+  font-size: var(--step--2);
+  font-family: "DM Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: border-color var(--dur-fast) linear, color var(--dur-fast) linear;
+}
+.language:hover { border-color: var(--ink); }
+
+.menu-toggle {
+  display: none;
+  border: 1px solid var(--line);
+  background: none;
+  padding: 8px;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+/* ========================== typography =================================== */
+
+.mono {
+  font-family: "DM Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: var(--step--2);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+/* The Playfair italic is the single decorative note in the page — but it has no
+   CJK glyphs, so on Chinese copy it falls back to a system serif and looks like
+   a bug. Scope it to English, and give the Chinese emphasis an underline
+   instead. */
+.serif-em {
+  font-family: "Playfair Display", "Songti SC", Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--accent-deep);
+  font-size: 1.06em;
+  letter-spacing: -0.01em;
+}
+:lang(zh) .serif-em {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 800;
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  background-size: 100% 0.16em;
+}
+
+/* Section titles for English copy read well in a tighter display setting;
+   :lang(en) scopes it so CJK never inherits the collisions that causes. */
+:lang(en) .hero-title { font-size: clamp(2.4rem, 1rem + 5vw, 5rem); line-height: 0.96; }
+:lang(en) .display,
+:lang(en) .work-heading h2,
+:lang(en) .contact h2 { font-size: clamp(2rem, 1rem + 3.6vw, 4.2rem); line-height: 1; }
+
+.display {
+  font-size: var(--step-4);
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+.lede {
+  max-width: var(--measure);
+  color: var(--muted);
+  font-size: var(--step-0);
+  line-height: 1.8;
+}
+.lede strong { color: var(--ink); font-weight: 700; }
+
+/* section index: a real element with aria-hidden, drawn as outlined type */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted);
+}
+.section-label::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: var(--line);
+}
+
+/* ============================ hero ====================================== */
+
+.hero {
+  position: relative;
+  min-height: calc(100svh - var(--topbar-h));
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 64px);
+  padding: clamp(48px, 8vw, 96px) 0 clamp(56px, 9vw, 120px);
+}
+
+.hero-title {
+  font-size: var(--step-5);
+  line-height: 1.24;
+  letter-spacing: -0.015em;
+  font-weight: 800;
+  color: var(--ink);
+  margin: 20px 0 26px;
+  /* The headline's line breaks are authored with <br>, so no balancing and no
+     mid-word breaking — both would fight the intended shape. */
+  text-wrap: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--muted);
+}
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-deep);
+  box-shadow: 0 0 0 0 color-mix(in oklab, var(--accent) 60%, transparent);
+  animation: pulse 2.6s var(--ease-in-out) infinite;
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--accent) 55%, transparent); }
+  50% { box-shadow: 0 0 0 7px transparent; }
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  margin-top: 34px;
+}
+
+/* --- load-in: a staggered entrance, pure CSS, no dependency --------------
+   These elements start visible in the markup sense (no opacity:0 default in
+   a stylesheet the JS must un-hide) — the animation runs once and ends at the
+   natural state, so a browser that ignores @keyframes still shows everything. */
+.hero-in {
+  animation: hero-in 900ms var(--ease-out) both;
+}
+.hero-in-2 { animation-delay: 90ms; }
+.hero-in-3 { animation-delay: 180ms; }
+.hero-in-4 { animation-delay: 270ms; }
+
+@keyframes hero-in {
+  from { opacity: 0; transform: translate3d(0, 22px, 0); }
+  to { opacity: 1; transform: none; }
+}
+
+/* the headline unmasks line by line rather than fading as a block */
+.hero-title {
+  animation: title-in 1000ms var(--ease-out) 60ms both;
+}
+@keyframes title-in {
+  from { opacity: 0; transform: translate3d(0, 34px, 0); clip-path: inset(0 0 100% 0); }
+  to { opacity: 1; transform: none; clip-path: inset(0 0 -10% 0); }
+}
+
+.hero-stage { animation: stage-in 1200ms var(--ease-out) 220ms both; }
+@keyframes stage-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: none; }
+}
+
+/* --- button: hard-offset brutalist edge, compositor-friendly hover ------- */
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 22px;
+  background: var(--ink);
+  color: var(--bg);
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  font-size: var(--step--1);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: background var(--dur-fast) linear, color var(--dur-fast) linear,
+    transform var(--dur-fast) var(--ease-out);
+}
+.button:hover { background: var(--accent); border-color: var(--accent); color: var(--ink); }
+.button svg { transition: transform var(--dur-fast) var(--ease-out); }
+.button:hover svg { transform: translateX(3px); }
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: var(--ink);
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--line);
+  transition: border-color var(--dur-fast) linear, color var(--dur-fast) linear;
+}
+.text-link:hover { border-color: var(--accent-deep); color: var(--accent-deep); }
+
+/* --- 3D stage ------------------------------------------------------------ */
+.hero-stage {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 560px;
+  justify-self: end;
+}
+
+.hero-stage canvas {
+  width: 100% !important;
+  height: 100% !important;
+  /* Starts transparent so the CSS poster below shows through; HeroScene fades
+     it in from onCreated. Non-JS and reduced-motion visitors keep the poster. */
+  opacity: 0;
+}
+
+/* The canvas clears to fully transparent so the page background shows through.
+   This painted halo is what actually makes the object read as lit — and it is
+   also the complete visual when 3D never loads. */
+.hero-stage::before {
+  content: "";
+  position: absolute;
+  inset: 4%;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 38% 32%, color-mix(in oklab, var(--accent) 22%, transparent), transparent 62%),
+    radial-gradient(circle at 68% 72%, color-mix(in oklab, var(--accent-deep) 16%, transparent), transparent 58%);
+  filter: blur(12px);
+  pointer-events: none;
+}
+
+/* the poster is what everyone sees first — and all that reduced-motion,
+   save-data or WebGL-less visitors ever see. It must stand on its own. */
+.hero-poster {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  transition: opacity 900ms var(--ease-out);
+}
+.hero-poster-off { opacity: 0; }
+
+.poster-rings { position: relative; width: 78%; aspect-ratio: 1; }
+.poster-rings i {
+  position: absolute;
+  inset: 0;
+  border: 1px solid color-mix(in oklab, var(--accent-deep) 42%, transparent);
+  border-radius: 50%;
+  animation: spin 34s linear infinite;
+}
+.poster-rings i:nth-child(1) { inset: 6%; border-style: dashed; animation-duration: 46s; }
+.poster-rings i:nth-child(2) { inset: 20%; animation-direction: reverse; animation-duration: 30s; }
+.poster-rings i:nth-child(3) { inset: 34%; border-style: dotted; animation-duration: 22s; }
+.poster-rings span {
+  position: absolute;
+  inset: 42%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 28%, var(--accent), var(--accent-deep) 70%);
+  filter: blur(0.3px);
+  box-shadow: 0 0 60px -10px color-mix(in oklab, var(--accent) 70%, transparent);
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ============================ about ===================================== */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(24px, 5vw, 80px);
+  margin-top: clamp(28px, 4vw, 56px);
+}
+
+.about-title { font-size: var(--step-3); line-height: 1.16; letter-spacing: -0.02em; font-weight: 800; }
+
+.about-detail { display: grid; gap: 26px; justify-items: start; }
+.about-detail p { max-width: 46ch; color: var(--muted); }
+
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: clamp(40px, 6vw, 72px);
+  border-top: var(--line-space);
+}
+.skill-item {
+  padding: 22px 20px 22px 0;
+  border-bottom: var(--line-space);
+  display: grid;
+  gap: 6px;
+}
+.skill-item + .skill-item { padding-left: 22px; border-left: var(--line-space); }
+.skill-item span { color: var(--muted); }
+.skill-item strong {
+  font-size: var(--step-1);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* ============================ work ====================================== */
+
+/* the inverted band: full-bleed dark, contrasts hard with the light sections */
+.work {
+  position: relative;
+  background: var(--bg-dark);
+  color: #f1eee5;
+  margin-inline: calc(50% - 50vw);
+  width: 100vw;
+  padding: clamp(72px, 12vw, 168px) 0;
+}
+.work .wrap { color: #f1eee5; }
+.work .section-label { color: var(--muted-dark); }
+.work .section-label::after { background: rgb(241 238 229 / 18%); }
+.work .serif-em { color: var(--accent); }
+.work-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin: clamp(20px, 3vw, 36px) 0 clamp(36px, 5vw, 64px);
+}
+.work-heading h2 {
+  font-size: var(--step-4);
+  line-height: 1.14;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+.projects { display: grid; gap: clamp(28px, 4vw, 56px); }
+
+.project-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  gap: clamp(20px, 3vw, 48px);
+  align-items: center;
+  padding-top: clamp(24px, 3vw, 40px);
+  border-top: 1px solid rgb(241 238 229 / 16%);
+}
+/* alternate the image side so the eye zig-zags down the page */
+.project-card:nth-child(even) .project-visual { order: 2; }
+
+.project-visual {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: #131a16;
+  aspect-ratio: 3 / 2;
+  isolation: isolate;
+}
+.project-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* duotone: desaturate, then tint with the olive accent via a blend layer */
+  filter: grayscale(1) contrast(1.12) brightness(0.92);
+  transform: scale(1.01);
+  transition: transform 900ms var(--ease-out), filter 600ms linear;
+}
+.project-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(150deg, var(--accent) 0%, var(--accent-deep) 100%);
+  mix-blend-mode: color;
+  opacity: 0.55;
+  pointer-events: none;
+  transition: opacity 600ms linear;
+}
+.project-card:hover .project-visual img { transform: scale(1.06); filter: grayscale(1) contrast(1.05) brightness(1); }
+.project-card:hover .project-visual::after { opacity: 0.32; }
+
+.project-index {
+  position: absolute;
+  left: 18px;
+  bottom: 10px;
+  z-index: 2;
+  font-size: var(--step-2);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: rgb(255 255 255 / 82%);
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.project-info { display: grid; gap: 14px; }
+.project-info h3 {
+  font-size: var(--step-2);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+.project-info p { color: var(--muted-dark); }
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.project-tags li {
+  padding: 5px 10px;
+  border: 1px solid rgb(241 238 229 / 22%);
+  border-radius: 100px;
+  font-family: "DM Mono", ui-monospace, monospace;
+  font-size: var(--step--2);
+  letter-spacing: 0.06em;
+  color: #d8d5c9;
+}
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--step--1);
+  font-weight: 700;
+  color: #f1eee5;
+  justify-self: start;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgb(241 238 229 / 34%);
+  transition: color var(--dur-fast) linear, border-color var(--dur-fast) linear;
+}
+.project-link:hover { color: var(--accent); border-color: var(--accent); }
+
+/* ======================= worldwide / marquee ============================ */
+
+.worldwide { position: relative; }
+.worldwide-media {
+  position: relative;
+  margin-inline: calc(50% - 50vw);
+  width: 100vw;
+  aspect-ratio: 21 / 9;
+  max-height: 74vh;
+  overflow: hidden;
+  isolation: isolate;
+}
+.worldwide-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1) contrast(1.08) brightness(0.85);
+}
+.worldwide-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, var(--accent) 0%, var(--accent-deep) 100%);
+  mix-blend-mode: color;
+  opacity: 0.45;
+}
+.worldwide-inner {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  padding: 0 var(--gutter);
+  z-index: 2;
+}
+.worldwide-inner p {
+  max-width: 24ch;
+  font-size: var(--step-2);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: #fff;
+  text-shadow: 0 2px 30px rgb(0 0 0 / 45%);
+}
+
+.marquee {
+  --marquee-speed: 46s;
+  display: flex;
+  width: max-content;
+  overflow: clip;
+  /* generous vertical padding: CJK glyphs are full-height and need the room */
+  padding: clamp(20px, 2.6vw, 34px) 0;
+  border-block: var(--line-space);
+  user-select: none;
+}
+/* Two identical tracks. Spacing lives on each item (not on the track's gap) so
+   the -50% keyframe lands exactly on the second copy's start — no flash. */
+.marquee-track {
+  display: flex;
+  align-items: center;
+  animation: marquee var(--marquee-speed) linear infinite;
+}
+.marquee-track span {
+  padding-right: clamp(24px, 3vw, 52px);
+  font-size: var(--step-2);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+.marquee-track span em {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  color: var(--accent-deep);
+  margin-right: 0.3em;
+}
+.marquee:hover .marquee-track { animation-play-state: paused; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* =========================== contact =================================== */
+
+.contact { text-align: left; }
+.contact-kicker { color: var(--muted); margin-bottom: 10px; }
+.contact h2 {
+  font-size: var(--step-4);
+  line-height: 1.16;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+  margin-bottom: clamp(24px, 4vw, 44px);
+  text-wrap: balance;
+}
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-size: var(--step-2);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--accent-deep);
+  border-bottom: 2px solid color-mix(in oklab, var(--accent) 45%, transparent);
+  padding-bottom: 6px;
+  transition: border-color var(--dur-fast) linear, gap var(--dur-fast) var(--ease-out);
+}
+.contact-email:hover { border-color: var(--accent-deep); gap: 22px; }
+
+/* ============================= footer ================================== */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 30px 0 40px;
+  border-top: var(--line-space);
+  color: var(--muted);
+  font-size: var(--step--1);
+}
+.footer a.footer-mail {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink);
+}
+.footer a.footer-mail:hover { color: var(--accent-deep); }
+
+/* ====================== motion layer (reveal) =========================== */
+/* Default state is VISIBLE. JS only adds motion. A failed observer, disabled
+   JS or an unsupported browser must never leave content hidden. */
+
+.js-reveal [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, clamp(14px, 2vw, 30px), 0);
+  transition: opacity var(--dur) var(--ease-out),
+    transform var(--dur) var(--ease-out);
+  transition-delay: calc(var(--reveal-i, 0) * 70ms);
+  will-change: opacity, transform;
+}
+.js-reveal [data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+/* ====================== responsive ===================================== */
+
+@media (max-width: 1000px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .project-card,
+  .project-card:nth-child(even) .project-visual { grid-template-columns: 1fr; order: 0; }
+  .project-card { gap: 20px; }
+  .hero-stage { justify-self: center; max-width: 420px; }
+}
+
+@media (max-width: 760px) {
+  /* 2px radius spreads into a gap between adjacent grid items at this width */
+  .section-label { gap: 10px; }
+  .menu-toggle { display: block; }
+  .nav {
+    position: absolute;
+    top: calc(var(--topbar-h) - 6px);
+    right: var(--gutter);
+    width: min(260px, calc(100vw - var(--gutter) * 2));
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    padding: 14px;
+    background: color-mix(in oklab, var(--bg) 98%, white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-2);
+  }
+  .nav-open { display: flex; }
+  .nav a { padding: 10px 4px; }
+  .nav a::after { display: none; }
+  .nav-cta { justify-content: space-between; }
+  .language { align-self: start; }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding-top: 24px;
+    gap: 8px;
+  }
+  /* The object must not push the value proposition below the fold on a phone. */
+  .hero-stage { max-width: 210px; order: -1; margin-inline: auto; }
+  .hero-title { font-size: var(--step-5); margin-top: 14px; }
+  .hero-actions { margin-top: 26px; }
+  .skill-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .skill-item + .skill-item { padding-left: 0; border-left: 0; }
+  .skill-item:nth-child(even) { padding-left: 20px; border-left: var(--line-space); }
+  .worldwide-media { aspect-ratio: 4 / 3; }
+}
+
+@media (max-width: 420px) {
+  .skill-list { grid-template-columns: 1fr; }
+  .skill-item:nth-child(even) { padding-left: 0; border-left: 0; }
+}
+
+/* ===================== reduced motion ================================== */
+/* Honour it per effect: kill translation, spin and marquee, keep opacity
+   fades (they are not vestibular triggers). Never blanket-kill everything,
+   or scroll reveals that were the only thing showing content would break. */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .status-dot { animation: none; }
+  .poster-rings i { animation: none; }
+  .marquee-track { animation: none; }
+  .hero-in,
+  .hero-title,
+  .hero-stage { animation: none; }
+  .js-reveal [data-reveal] { opacity: 1; transform: none; }
+  .button:hover svg { transform: none; }
+  .contact-email:hover { gap: 14px; }
+}
+
+/* ===================== print / fallback ================================ */
+@media print {
+  .grain, .topbar, .hero-stage { display: none; }
+  .work { background: none; color: var(--ink); }
+}
